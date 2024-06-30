@@ -1,0 +1,31 @@
+# data set path
+filtered_data_path: '/home/lab2/zyc/A_orange/DISCA_GMM/data_emd4603/data.h5' # extracted data point set
+data_path: '/home/lab2/zyc/A_orange/DISCA_GMM/data_emd4603/original' # original data set
+
+# stored path
+saving_path: '/home/lab2/zyc/A_orange/DISCA_GMM/Results/'
+algorithm_name: 'gmmu_cavi_llh_hist'
+filtered_particle_saving_path: '/home/lab2/zyc/A_orange/DISCA_GMM/Results/filtered_particle' #'/local/scratch/v_yijian_bai/disca/deepcluster_gmmu/results/hist'
+
+# setting of YOPO and GMMU
+image_size: 24    # subtomogram size
+input_size: 24
+# candidateKs: [10,11,12,13,14,15,16]   # candidate number of clusters to test
+candidateKs: [0,1,2,3,4]   # candidate number of clusters to test
+
+
+batch_size: 2
+scanning_num: 4 # the number of scanning
+factor: 2 # the num of scanning division
+M: 4   # number of DISCA training iterations
+lr: 0.01   # CNN learning rate
+loss_function: 'categorical_crossentropy' # loss function used in TF
+optimizer: 'adam'
+hidden_num: 12
+
+reg_covar: 0.000001 # for inversing the variance matrix and initialization (adding on the diagonal)
+u_filter_rate: 0.025 # the higher, the more data will be classified as outliers
+alpha: 1.0 # the higher, the more cluters will be generated
+
+scanning_bottom: 100
+scanning_upper: 20000

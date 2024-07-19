@@ -29,7 +29,8 @@ git clone https://github.com/orange-eng/DISCA_GMM0630.git
 ```
 #### Environments
 
-python 3.9.12
+- python 3.9.12
+- torch 1.13.0
 
 All dependencies can be found in requirements.txt. There are some important dependencies.
 ```

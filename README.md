@@ -29,7 +29,9 @@ git clone https://github.com/orange-eng/DISCA_GMM0630.git
 ```
 #### Environments
 
+python 3.9.12
 
+All dependencies can be found in requirements.txt. There are some important dependencies.
 ```
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mrcfile h5py scikit-learn scikit-image matplotlib scipy==1.5.4 pypng
 ```
